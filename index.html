@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zvěroklání — karetní souboj zvířat (edice Rychlost)</title>
+<meta name="description" content="Zvěroklání je česká karetní hra, kde proti sobě stojí zvířata. Otoč kartu, porovnej rychlost, vyšší bere. 66 zvířat, šest prostředí. Od 4 let.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zvěroklání — karetní souboj zvířat">
+<meta property="og:description" content="Otoč kartu, porovnej rychlost, vyšší bere. 66 zvířat, šest prostředí. Rodinná karetní hra od 4 let.">
+<meta property="og:image" content="https://zveroklani.cz/assets/cards/gepard.png">
+<meta property="og:url" content="https://zveroklani.cz">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zvěroklání — karetní souboj zvířat">
+<meta name="twitter:description" content="Otoč kartu, porovnej rychlost, vyšší bere. 66 zvířat, šest prostředí. Rodinná karetní hra od 4 let.">
+<meta name="twitter:image" content="https://zveroklani.cz/assets/cards/gepard.png">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0 0 100 100'%3E%3Crect%20width='100'%20height='100'%20rx='24'%20fill='%2324A9A5'/%3E%3Cg%20fill='%23ffffff'%3E%3Cellipse%20cx='50'%20cy='68'%20rx='17'%20ry='14'/%3E%3Cellipse%20cx='32'%20cy='48'%20rx='7'%20ry='9.5'/%3E%3Cellipse%20cx='43'%20cy='36'%20rx='7'%20ry='9.5'/%3E%3Cellipse%20cx='57'%20cy='36'%20rx='7'%20ry='9.5'/%3E%3Cellipse%20cx='68'%20cy='48'%20rx='7'%20ry='9.5'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@700;800;900&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-label="Úvod">
+    <div class="hero__paw" aria-hidden="true"></div>
+    <div class="hero__inner">
+
+      <div class="hero__copy">
+        <span class="badge"><span class="badge__dot" aria-hidden="true"></span>Edice: Rychlost</span>
+        <h1 class="hero__title">ZVĚROKLÁNÍ</h1>
+        <p class="hero__subtitle">Kdo je rychlejší?</p>
+        <p class="hero__lead">Karetní souboj zvířat — otoč kartu, porovnej, vyšší bere. Od 4 let.</p>
+        <a href="#kontakt" class="btn">Napiš nám <span class="btn__arrow" aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="hero__card-col">
+        <div class="zk-float">
+          <button type="button" class="card" id="card-hero" data-flip="hero" aria-pressed="false" aria-label="Karta Gepard, rychlost 112 km/h. Klikni pro otočení.">
+            <div class="card__flip">
+              <div class="card__face card__face--front">
+                <img src="assets/cards/gepard.png" alt="Karta Gepard, rychlost 112 km/h">
+              </div>
+              <div class="card__face card__face--back">
+                <img src="assets/cards/rub.png" alt="Rub karty Zvěroklání">
+              </div>
+            </div>
+          </button>
+        </div>
+        <p class="hero__hint"><span aria-hidden="true">↻</span> Klikni a otoč kartu</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CO TO JE ================= -->
+  <section class="section" aria-labelledby="co-to-je-title">
+    <div class="intro" data-reveal>
+      <h2 id="co-to-je-title" class="section-title">Co to je</h2>
+      <p>Zvěroklání je karetní hra, kde proti sobě stojí zvířata. V téhle edici rozhoduje <strong>rychlost</strong> — od geparda po lenochoda. Každá karta je skutečné zvíře se skutečnými čísly.</p>
+    </div>
+  </section>
+
+  <!-- ================= JAK SE HRAJE ================= -->
+  <section class="section section--tinted" id="jak-se-hraje" aria-labelledby="jak-se-hraje-title">
+    <div class="wrap-narrow">
+      <h2 id="jak-se-hraje-title" class="section-title" data-reveal>Jak se hraje</h2>
+      <p class="section-lead" data-reveal>V jedné krabičce jsou dva způsoby hraní — od rychlého klání pro nejmenší po napínavější bitvu s kostkou.</p>
+
+      <div class="tabs-row" data-reveal>
+        <div role="tablist" aria-label="Způsob hraní" class="tablist">
+          <button type="button" role="tab" id="zk-tab-basic" class="tab" aria-selected="true" tabindex="0" aria-controls="zk-tabpanel">Základní hra</button>
+          <button type="button" role="tab" id="zk-tab-big" class="tab" aria-selected="false" tabindex="-1" aria-controls="zk-tabpanel">Velké klání 🎲</button>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="zk-tabpanel" aria-labelledby="zk-tab-basic" class="wrap-narrow">
+        <div class="steps-grid" id="steps-grid"></div>
+      </div>
+
+      <div class="teaser" data-reveal>
+        <button type="button" class="teaser__fan" id="teaser-fan" aria-label="Tři karty rubem nahoru — třetí, bonusová karta zůstává překvapením">
+          <img src="assets/cards/rub.png" alt="" aria-hidden="true">
+          <img src="assets/cards/rub.png" alt="" aria-hidden="true">
+          <img src="assets/cards/rub.png" alt="" aria-hidden="true" class="teaser__top">
+          <span class="teaser__badge" aria-hidden="true">?</span>
+        </button>
+        <div class="teaser__copy">
+          <h3>A to není všechno…</h3>
+          <p>V krabičce čeká ještě třetí karta s bonusovými pravidly. Ale ta zůstane překvapením. 🤫</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ŠEST PROSTŘEDÍ ================= -->
+  <section class="section" aria-labelledby="prostredi-title">
+    <div class="wrap-narrow">
+      <h2 id="prostredi-title" class="section-title" data-reveal>Šest prostředí</h2>
+      <p class="section-lead" data-reveal>66 zvířat, šest světů. V každém 11 karet — od geparda po lenochoda.</p>
+
+      <div class="animals-grid" data-reveal>
+
+        <div class="animal animal--plane">
+          <button type="button" class="card card--grid" data-flip="gepard" aria-pressed="false" aria-label="Karta Gepard, prostředí Pláně, rychlost 112 km/h. Klikni pro otočení.">
+            <div class="card__flip">
+              <div class="card__face card__face--front"><img src="assets/cards/gepard.png" alt="Karta Gepard, rychlost 112 km/h" loading="lazy"></div>
+              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
+            </div>
+          </button>
+          <div class="animal__label">
+            <span class="animal__icon" aria-hidden="true"></span>
+            <span class="animal__name">Pláně</span>
+          </div>
+        </div>
+
+        <div class="animal animal--les">
+          <button type="button" class="card card--grid" data-flip="veverka" aria-pressed="false" aria-label="Karta Veverka, prostředí Les, rychlost 19 km/h. Klikni pro otočení.">
+            <div class="card__flip">
+              <div class="card__face card__face--front"><img src="assets/cards/veverka.png" alt="Karta Veverka, rychlost 19 km/h" loading="lazy"></div>
+              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
+            </div>
+          </button>
+          <div class="animal__label">
+            <span class="animal__icon" aria-hidden="true"></span>
+            <span class="animal__name">Les</span>
+          </div>
+        </div>
+
+        <div class="animal animal--voda">
+          <button type="button" class="card card--grid" data-flip="tulen" aria-pressed="false" aria-label="Karta Tuleň, prostředí Voda, rychlost 31 km/h. Klikni pro otočení.">
+            <div class="card__flip">
+              <div class="card__face card__face--front"><img src="assets/cards/tulen.png" alt="Karta Tuleň, rychlost 31 km/h" loading="lazy"></div>
+              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
+            </div>
+          </button>
+          <div class="animal__label">
+            <span class="animal__icon" aria-hidden="true"></span>
+            <span class="animal__name">Voda</span>
+          </div>
+        </div>
+
+        <div class="animal animal--vzduch">
+          <button type="button" class="card card--grid" data-flip="kolibrik" aria-pressed="false" aria-label="Karta Kolibřík, prostředí Vzduch, rychlost 49 km/h. Klikni pro otočení.">
+            <div class="card__flip">
+              <div class="card__face card__face--front"><img src="assets/cards/kolibrik.png" alt="Karta Kolibřík, rychlost 49 km/h" loading="lazy"></div>
+              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
+            </div>
+          </button>
+          <div class="animal__label">
+            <span class="animal__icon" aria-hidden="true"></span>
+            <span class="animal__name">Vzduch</span>
+          </div>
+        </div>
+
+        <div class="animal animal--hory">
+          <button type="button" class="card card--grid" data-flip="svist" aria-pressed="false" aria-label="Karta Svišť, prostředí Hory, rychlost 10 km/h. Klikni pro otočení.">
+            <div class="card__flip">
+              <div class="card__face card__face--front"><img src="assets/cards/svist.png" alt="Karta Svišť, rychlost 10 km/h" loading="lazy"></div>
+              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
+            </div>
+          </button>
+          <div class="animal__label">
+            <span class="animal__icon" aria-hidden="true"></span>
+            <span class="animal__name">Hory</span>
+          </div>
+        </div>
+
+        <div class="animal animal--poly">
+          <button type="button" class="card card--grid" data-flip="ledni" aria-pressed="false" aria-label="Karta Lední medvěd, prostředí Póly, rychlost 40 km/h. Klikni pro otočení.">
+            <div class="card__flip">
+              <div class="card__face card__face--front"><img src="assets/cards/ledni-medved.png" alt="Karta Lední medvěd, rychlost 40 km/h" loading="lazy"></div>
+              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
+            </div>
+          </button>
+          <div class="animal__label">
+            <span class="animal__icon" aria-hidden="true"></span>
+            <span class="animal__name">Póly</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= JAK VZNIKLA ================= -->
+  <!-- Text je draft schválený zadavatelem — neměnit. -->
+  <section class="section section--tinted" aria-labelledby="jak-vznikla-title">
+    <div class="origin">
+      <div class="origin__copy" data-reveal>
+        <h2 id="jak-vznikla-title">Jak vznikla</h2>
+        <p>Zvěroklání vzniklo doma u stolu. Vymyslel jsem ho pro syna, který zbožňuje zvířata a pořád se ptal na jednu věc: kdo je vlastně nejrychlejší — gepard, sokol, nebo plachetník? Z jedné otázky byl brzy seznam, ze seznamu kartičky a z kartiček hra, kterou jsme spolu ladili tak dlouho, dokud nebavila celou rodinu. Teď ji chceme dát i vám.</p>
+      </div>
+      <div class="origin__image" data-reveal>
+        <img src="assets/cards/veverka.png" alt="Karta Veverka" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KONTAKT ================= -->
+  <section id="kontakt" class="section" aria-labelledby="kontakt-title">
+    <div class="contact" data-reveal>
+      <span class="contact__icon" aria-hidden="true"></span>
+      <h2 id="kontakt-title">Napiš nám</h2>
+      <p>Máš nápad, našel jsi chybu, nebo chceš vědět, kdy půjde balíček pořídit? Napiš nám.</p>
+      <!-- PLACEHOLDER: dočasný kontaktní e-mail — před spuštěním nahraď skutečnou adresou (viz README, sekce "Kontaktní e-mail"). -->
+      <a href="mailto:petr.matl42@gmail.com?subject=Zv%C4%9Brokl%C3%A1n%C3%AD%20%E2%80%93%20zp%C4%9Btn%C3%A1%20vazba" class="btn">petr.matl42@gmail.com</a>
+      <p class="contact__note">Možnost objednat balíček přidáme brzy.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Petr Mátl • zveroklani.cz • © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

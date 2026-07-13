@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# zdrojový export z Claude Design + zadání — referenční materiál, není součástí nasazovaného webu
+/design/
+zadani-claude-code-zveroklani.md

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="834" height="759" viewBox="0 0 834 759" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="paw_left" transform="matrix(4.103366,-0.723534,0.723534,4.103366,291.666667,333.333333)">
+        <g transform="matrix(1,-0,0,1,-0.528541,-13.836546)">
+            <ellipse cx="0" cy="20" rx="19" ry="15.5" style="fill:rgb(4,0,7);"/>
+        </g>
+        <g transform="matrix(0.961262,-0.275637,0.275637,0.961262,2.455406,-6.528881)">
+            <ellipse cx="-22" cy="-12" rx="7.5" ry="10" style="fill:rgb(4,0,7);"/>
+        </g>
+        <g transform="matrix(0.996195,-0.087156,0.087156,0.996195,1.799828,-0.777157)">
+            <ellipse cx="-8" cy="-21" rx="8" ry="10.5" style="fill:rgb(4,0,7);"/>
+        </g>
+        <g transform="matrix(0.996195,0.087156,-0.087156,0.996195,-1.797926,-0.820735)">
+            <ellipse cx="8.5" cy="-21" rx="8" ry="10.5" style="fill:rgb(4,0,7);"/>
+        </g>
+        <g transform="matrix(0.961262,0.275637,-0.275637,0.961262,-2.436036,-6.6667)">
+            <ellipse cx="22.5" cy="-12" rx="7.5" ry="10" style="fill:rgb(4,0,7);"/>
+        </g>
+    </g>
+    <g id="paw_right" transform="matrix(4.126117,0.579888,-0.579888,4.126117,541.666667,408.333333)">
+        <g transform="matrix(1,0,0,1,-14.557741,22.570118)">
+            <ellipse cx="0" cy="20" rx="19" ry="15.5" style="fill:rgb(4,0,7);"/>
+        </g>
+        <g transform="matrix(0.961262,-0.275637,0.275637,0.961262,-11.820153,29.588607)">
+            <ellipse cx="-22" cy="-12" rx="7.5" ry="10" style="fill:rgb(4,0,7);"/>
+        </g>
+        <g transform="matrix(0.996195,-0.087156,0.087156,0.996195,-12.47573,35.340332)">
+            <ellipse cx="-8" cy="-21" rx="8" ry="10.5" style="fill:rgb(4,0,7);"/>
+        </g>
+        <g transform="matrix(0.996195,0.087156,-0.087156,0.996195,-16.073484,35.296754)">
+            <ellipse cx="8.5" cy="-21" rx="8" ry="10.5" style="fill:rgb(4,0,7);"/>
+        </g>
+        <g transform="matrix(0.961262,0.275637,-0.275637,0.961262,-16.711595,29.450789)">
+            <ellipse cx="22.5" cy="-12" rx="7.5" ry="10" style="fill:rgb(4,0,7);"/>
+        </g>
+    </g>
+</svg>
