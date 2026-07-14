@@ -610,13 +610,6 @@ button {
   min-height: 36px;
 }
 
-.fan-caption {
-  text-align: center;
-  color: #8AA09D;
-  font-size: 13px;
-  margin: 16px 0 0;
-}
-
 .fan-leader {
   display: inline-flex;
   align-items: center;
