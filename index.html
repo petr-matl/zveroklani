@@ -106,83 +106,29 @@
       <h2 id="prostredi-title" class="section-title" data-reveal>Šest prostředí</h2>
       <p class="section-lead" data-reveal>66 zvířat, šest světů. V každém 11 karet — od geparda po lenochoda.</p>
 
-      <div class="animals-grid" data-reveal>
+      <div class="prostredi-body" data-reveal>
 
-        <div class="animal animal--plane">
-          <button type="button" class="card card--grid" data-flip="gepard" aria-pressed="false" aria-label="Karta Gepard, prostředí Pláně, rychlost 112 km/h. Klikni pro otočení.">
-            <div class="card__flip">
-              <div class="card__face card__face--front"><img src="assets/cards/gepard.png" alt="Karta Gepard, rychlost 112 km/h" loading="lazy"></div>
-              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
+        <div class="prostredi-desktop">
+          <div class="fan-stage" id="fan-stage"></div>
+          <div class="fan-leader-row">
+            <div class="fan-leader" id="fan-leader-desktop">
+              <span class="fan-leader__icon" aria-hidden="true"></span>
+              <span class="fan-leader__text"></span>
             </div>
-          </button>
-          <div class="animal__label">
-            <span class="animal__icon" aria-hidden="true"></span>
-            <span class="animal__name">Pláně</span>
           </div>
+          <p class="fan-caption">Klikni na kartu ve vějíři, nebo použij šipky a Enter.</p>
         </div>
 
-        <div class="animal animal--les">
-          <button type="button" class="card card--grid" data-flip="veverka" aria-pressed="false" aria-label="Karta Veverka, prostředí Les, rychlost 19 km/h. Klikni pro otočení.">
-            <div class="card__flip">
-              <div class="card__face card__face--front"><img src="assets/cards/veverka.png" alt="Karta Veverka, rychlost 19 km/h" loading="lazy"></div>
-              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
+        <div class="prostredi-mobile">
+          <div class="mobile-stack">
+            <div class="mobile-stage" id="mobile-stage"></div>
+            <div class="mobile-leader-row">
+              <div class="fan-leader fan-leader--mobile" id="fan-leader-mobile">
+                <span class="fan-leader__icon" aria-hidden="true"></span>
+                <span class="fan-leader__text"></span>
+              </div>
             </div>
-          </button>
-          <div class="animal__label">
-            <span class="animal__icon" aria-hidden="true"></span>
-            <span class="animal__name">Les</span>
-          </div>
-        </div>
-
-        <div class="animal animal--voda">
-          <button type="button" class="card card--grid" data-flip="tulen" aria-pressed="false" aria-label="Karta Tuleň, prostředí Voda, rychlost 31 km/h. Klikni pro otočení.">
-            <div class="card__flip">
-              <div class="card__face card__face--front"><img src="assets/cards/tulen.png" alt="Karta Tuleň, rychlost 31 km/h" loading="lazy"></div>
-              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
-            </div>
-          </button>
-          <div class="animal__label">
-            <span class="animal__icon" aria-hidden="true"></span>
-            <span class="animal__name">Voda</span>
-          </div>
-        </div>
-
-        <div class="animal animal--vzduch">
-          <button type="button" class="card card--grid" data-flip="kolibrik" aria-pressed="false" aria-label="Karta Kolibřík, prostředí Vzduch, rychlost 49 km/h. Klikni pro otočení.">
-            <div class="card__flip">
-              <div class="card__face card__face--front"><img src="assets/cards/kolibrik.png" alt="Karta Kolibřík, rychlost 49 km/h" loading="lazy"></div>
-              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
-            </div>
-          </button>
-          <div class="animal__label">
-            <span class="animal__icon" aria-hidden="true"></span>
-            <span class="animal__name">Vzduch</span>
-          </div>
-        </div>
-
-        <div class="animal animal--hory">
-          <button type="button" class="card card--grid" data-flip="svist" aria-pressed="false" aria-label="Karta Svišť, prostředí Hory, rychlost 10 km/h. Klikni pro otočení.">
-            <div class="card__flip">
-              <div class="card__face card__face--front"><img src="assets/cards/svist.png" alt="Karta Svišť, rychlost 10 km/h" loading="lazy"></div>
-              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
-            </div>
-          </button>
-          <div class="animal__label">
-            <span class="animal__icon" aria-hidden="true"></span>
-            <span class="animal__name">Hory</span>
-          </div>
-        </div>
-
-        <div class="animal animal--poly">
-          <button type="button" class="card card--grid" data-flip="ledni" aria-pressed="false" aria-label="Karta Lední medvěd, prostředí Póly, rychlost 40 km/h. Klikni pro otočení.">
-            <div class="card__flip">
-              <div class="card__face card__face--front"><img src="assets/cards/ledni-medved.png" alt="Karta Lední medvěd, rychlost 40 km/h" loading="lazy"></div>
-              <div class="card__face card__face--back"><img src="assets/cards/rub.png" alt="Rub karty Zvěroklání" loading="lazy"></div>
-            </div>
-          </button>
-          <div class="animal__label">
-            <span class="animal__icon" aria-hidden="true"></span>
-            <span class="animal__name">Póly</span>
+            <div class="mobile-dots" id="mobile-dots"></div>
           </div>
         </div>
 
@@ -196,7 +142,8 @@
     <div class="origin">
       <div class="origin__copy" data-reveal>
         <h2 id="jak-vznikla-title">Jak vznikla</h2>
-        <p>Zvěroklání vzniklo doma u stolu. Vymyslel jsem ho pro syna, který zbožňuje zvířata a pořád se ptal na jednu věc: kdo je vlastně nejrychlejší — gepard, sokol, nebo plachetník? Z jedné otázky byl brzy seznam, ze seznamu kartičky a z kartiček hra, kterou jsme spolu ladili tak dlouho, dokud nebavila celou rodinu. Teď ji chceme dát i vám.</p>
+        <p>Jednou přišel syn domů s karetní hrou, kterou si pořídil na škole v přírodě. Jednalo se v podstatě o kartičky zvířat, které umožňovali hrát několik různých variant z nichž suverénně největší úspěch měla varianta vyšší bere, kdy to hrál hodiny a hodiny s mladším bráchou, s každým z rodiny, s kamarády... </p>
+        <p>A to nás inspirovalo k tomu, abychom si navrhli vlastní hru s vlastními zvířátky, mechanikami, která by vylepšovala koncept vyšší bere. A protože nás to opravdu bavilo, tak ji chceme dát i vám.</p>
       </div>
       <div class="origin__image" data-reveal>
         <img src="assets/cards/veverka.png" alt="Karta Veverka" loading="lazy">
@@ -212,7 +159,6 @@
       <p>Máš nápad, našel jsi chybu, nebo chceš vědět, kdy půjde balíček pořídit? Napiš nám.</p>
       <!-- PLACEHOLDER: dočasný kontaktní e-mail — před spuštěním nahraď skutečnou adresou (viz README, sekce "Kontaktní e-mail"). -->
       <a href="mailto:petr.matl42@gmail.com?subject=Zv%C4%9Brokl%C3%A1n%C3%AD%20%E2%80%93%20zp%C4%9Btn%C3%A1%20vazba" class="btn">petr.matl42@gmail.com</a>
-      <p class="contact__note">Možnost objednat balíček přidáme brzy.</p>
     </div>
   </section>
 
