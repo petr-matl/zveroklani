@@ -135,29 +135,6 @@ button {
   min-width: 290px;
 }
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #fff;
-  border: 1px solid rgba(36, 169, 165, 0.28);
-  color: #1B8582;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 800;
-  font-size: 13px;
-  padding: 6px 13px;
-  border-radius: 999px;
-  box-shadow: 0 2px 8px rgba(36, 169, 165, 0.08);
-  white-space: nowrap;
-}
-
-.badge__dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #24A9A5;
-}
-
 .hero__title {
   font-family: 'PT Serif', Georgia, serif;
   font-weight: 700;
@@ -202,6 +179,7 @@ button {
 
 .btn:hover,
 .btn:focus-visible {
+  color: #fff;
   background: #1B8582;
   transform: translateY(-2px);
   box-shadow: 0 16px 32px rgba(36, 169, 165, 0.4);
